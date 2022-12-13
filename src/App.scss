@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+$body-background-color: hsl(248, 15, 11);
+$box-color: hsl(248, 10, 15);
+$primary-text-color: hsl(252, 11, 91);
+$secondary-text-color: hsl(251, 9, 53);
+
+$strong-indication: hsl(127, 100, 82);
+$medium-indication: hsl(42, 91, 68);
+$weak-indication: hsl(13, 95, 66);
+$too-weak-indication: hsl(0, 91, 63);
+
+$heading-weight: 700;
+
+$heading-large-size: 32px;
+$heading-medium-size: 24px;
+
+$heading-large-line-height: 43px;
+$heading-medium-line-height: 23px;
+
+body {
+   font-family: 'JetBrains Mono', monospace;
+   background-color: $body-background-color;
+}
