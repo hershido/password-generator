@@ -1,0 +1,21 @@
+@import '../../GlobalVariables.scss';
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+   height: 65px;
+   width: 100%;
+   border: none;
+   background-color: $strong-indication;
+   font-family: 'JetBrains Mono', monospace;
+   cursor: pointer;
+   color:$body-background-color;
+}
+
+.button:hover {
+   border: 2px solid $strong-indication;
+   background-color: transparent;
+   color:$strong-indication;
+}

@@ -1,0 +1,23 @@
+@import '../../GlobalVariables.scss';
+
+.medium {
+   font-size: $heading-medium-size;
+   line-height: $heading-medium-line-height;
+}
+
+.large {
+   font-size: $heading-large-size;
+   line-height: $heading-large-line-height;
+}
+
+.primary {
+   color: $primary-text-color;
+}
+
+.secondary {
+   color: $secondary-text-color;
+}
+
+.highlight {
+   color: $strong-indication;
+}

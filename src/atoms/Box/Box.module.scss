@@ -1,0 +1,10 @@
+@import '../../GlobalVariables.scss';
+
+.box {
+   display: flex;
+   flex-direction: column;
+   gap:32px;
+   padding: 32px;
+   background-color: $box-color;
+
+}

@@ -1,12 +1,12 @@
 import React from 'react';
-import {} from './box.module.css'
+import styles from './Box.module.scss'
 
 interface BoxProps {
    children?: React.ReactNode;
 }
 
-const Box: React.FC<BoxProps> = ({ children }) => {
-   return <div>{children}</div>;
+export const Box: React.FC<BoxProps> = ({ children }) => {
+   return <div className={styles.box}>{children}</div>;
 };
 
-export default Box;
+

@@ -1,12 +1,10 @@
-import './App.scss';
-import Heading from './atoms/Heading';
+import { PasswordGenerator } from './components/PasswordGenerator';
+import './GlobalVariables.scss';
 
 function App() {
    return (
       <div className='App'>
-         <Heading headingLevel='h2' size='large'>
-            suga
-         </Heading>
+         <PasswordGenerator />
       </div>
    );
 }

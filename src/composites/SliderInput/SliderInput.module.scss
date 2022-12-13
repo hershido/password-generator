@@ -1,0 +1,42 @@
+@import '../../GlobalVariables.scss';
+.sliderContainer {
+   position: relative;
+   height: 8px;
+   background-color: $body-background-color;
+}
+
+.slider {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 8px;
+   margin: 0;
+   -webkit-appearance: none;
+   appearance: none;
+   background-color: transparent;
+   z-index: 20;
+}
+
+.slider::-webkit-slider-thumb {
+    width: 25px;
+    height: 25px;
+   -webkit-appearance: none;
+   appearance: none;
+   border-radius: 50%;
+   background: $primary-text-color;
+   cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:active{
+    border:1px solid $strong-indication;
+    background-color:$body-background-color;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    background-color: $strong-indication;
+}

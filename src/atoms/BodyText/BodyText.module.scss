@@ -1,0 +1,18 @@
+@import '../../GlobalVariables.scss';
+
+.medium {
+   font-size: $body-medium-size;
+   line-height: $body-medium-line-height;
+}
+
+.primary {
+   color: $primary-text-color;
+}
+
+.secondary {
+   color: $secondary-text-color;
+}
+
+.highlight{
+   color:$strong-indication;
+}

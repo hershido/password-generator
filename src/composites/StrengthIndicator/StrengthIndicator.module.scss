@@ -1,0 +1,44 @@
+@import '../../GlobalVariables.scss';
+
+.strengthIndicator {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 32px;
+   background-color: $body-background-color;
+}
+
+.indication {
+   display: flex;
+   justify-content: space-between;
+   gap: 16px;
+}
+
+.indicatorBars {
+   display: flex;
+   justify-content: space-between;
+   gap: 8px;
+}
+
+.indicatorBar {
+   width: 10px;
+   height: 28px;
+   border: 2px solid $primary-text-color;
+}
+
+.full {
+   border: none;
+}
+
+.strong {
+   background-color: $strong-indication;
+}
+.medium {
+   background-color: $medium-indication;
+}
+.weak {
+   background-color: $weak-indication;
+}
+.tooWeak {
+   background-color: $too-weak-indication;
+}
