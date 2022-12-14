@@ -7,7 +7,7 @@ export const Label: React.FC<{ text: string; value?: number }> = ({ text, value 
    return (
       <label className={styles.label}>
          <BodyText>{text}</BodyText>
-         {value && <Heading type='highlight'>{value}</Heading>}
+         {value && <Heading size='large' type='highlight'>{value}</Heading>}
       </label>
    );
 };
