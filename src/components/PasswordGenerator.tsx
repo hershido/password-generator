@@ -16,8 +16,8 @@ import { checkPasswordStrength, generatePassword } from './passwordHelpers';
 import { Score } from './types';
 
 export const PasswordGenerator = () => {
-   const [password, setPassword] = useState('********');
-   const [characterCount, setCharacterCount] = useState(8);
+   const [password, setPassword] = useState<string>('********');
+   const [characterCount, setCharacterCount] = useState<number>(8);
    const [upperCase, setUpperCase] = useState<boolean>(false);
    const [lowerCase, setLowerCase] = useState<boolean>(false);
    const [numbers, setNumbers] = useState<boolean>(false);
@@ -27,7 +27,7 @@ export const PasswordGenerator = () => {
 
    useEffect(() => {
       setScore(
-         checkPasswordStrength(characterCount, upperCase, lowerCase, numbers, symbols, score)
+         checkPasswordStrength(characterCount, upperCase, lowerCase, numbers, symbols)
       );
    }, [characterCount, upperCase, lowerCase, numbers, symbols]);
 

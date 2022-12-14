@@ -6,7 +6,6 @@ export function checkPasswordStrength(
    lowerCase: boolean,
    numbers: boolean,
    symbols: boolean,
-   score: Score
 ): Score {
    let calculatedScore = 0;
    upperCase && lowerCase && calculatedScore++;
@@ -50,13 +49,14 @@ export function generatePassword(
 
    // If the character set is empty (i.e. none of the options were true), return an empty string
    if (characterSet.length === 0) {
-      return '';
+      return '********';
    }
 
    // Otherwise, generate a password by picking characters from the character set at random
    for (let i = 0; i < length; i++) {
       password += characterSet.charAt(Math.floor(Math.random() * characterSet.length));
    }
+
 
    // Return the generated password
    return password;

@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import { PropsWithChildren } from 'react';
 import styles from './CheckBoxGroup.module.scss';
 
 interface CheckBoxGroup {
