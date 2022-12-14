@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonPropTypes> = ({ label, icon, iconHover, onCl
          onMouseLeave={() => setIsHovered(false)}
          className={styles.button}>
          {label && label}
-         {icon && <img src={hovered ? iconHover : icon} />}
+         {icon && <img src={hovered ? iconHover : icon} alt=''/>}
       </button>
    );
 };

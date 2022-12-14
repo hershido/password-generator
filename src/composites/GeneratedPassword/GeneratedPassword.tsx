@@ -33,7 +33,7 @@ export const GeneratedPassword: React.FC<GeneratedPasswordProps> = ({
                onMouseEnter={() => setCopyButtonHovered(true)}
                onMouseLeave={() => setCopyButtonHovered(false)}
                onClick={handleClick}>
-               <img src={copyButtonHovered ? IconHover : Icon}></img>
+               <img src={copyButtonHovered ? IconHover : Icon} alt=""></img>
             </button>
          </div>
       </div>
