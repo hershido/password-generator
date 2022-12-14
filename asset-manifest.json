@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.935160f0.css",
+    "main.js": "/static/js/main.dc3a67bf.js",
+    "static/media/fa-regular-hover.svg": "/static/media/fa-regular-hover.089b54430c0caf953d0056e78b6a9627.svg",
+    "static/media/fa-regular.svg": "/static/media/fa-regular.8d03a24af8bb5f6c86dcd1de8ecc2dc8.svg",
+    "index.html": "/index.html",
+    "static/media/arrow.svg": "/static/media/arrow.ad1bacfa2e6a3d183be0c80feee5cb38.svg",
+    "static/media/arrowHover.svg": "/static/media/arrowHover.d682e178ac32403a2d804d37d145df2c.svg",
+    "main.935160f0.css.map": "/static/css/main.935160f0.css.map",
+    "main.dc3a67bf.js.map": "/static/js/main.dc3a67bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.935160f0.css",
+    "static/js/main.dc3a67bf.js"
+  ]
+}
