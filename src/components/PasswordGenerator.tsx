@@ -3,6 +3,7 @@ import { Box } from '../atoms/Box/Box';
 import { Button } from '../atoms/Button/Button';
 import { Heading } from '../atoms/Heading/Heading';
 import Layout from '../atoms/Layout/Layout';
+import { Spacer01 } from '../atoms/Spacer/Spacer01';
 import { CheckBox } from '../composites/CheckBox/CheckBox';
 import { CheckBoxGroup } from '../composites/CheckBoxGroup/CheckBoxGroup';
 import { GeneratedPassword } from '../composites/GeneratedPassword/GeneratedPassword';
@@ -26,9 +27,7 @@ export const PasswordGenerator = () => {
    const [snackBar, setSnackBar] = useState<boolean>(false);
 
    useEffect(() => {
-      setScore(
-         checkPasswordStrength(characterCount, upperCase, lowerCase, numbers, symbols)
-      );
+      setScore(checkPasswordStrength(characterCount, upperCase, lowerCase, numbers, symbols));
    }, [characterCount, upperCase, lowerCase, numbers, symbols]);
 
    function handleGenerateClick() {
@@ -36,24 +35,40 @@ export const PasswordGenerator = () => {
       handleSnackBar(false);
    }
 
-   function handleSnackBar(param:boolean){
+   function handleSnackBar(param: boolean) {
       setSnackBar(param);
    }
 
    return (
       <div className='PasswordGenerator'>
          <Layout>
-            <Heading type='secondary'>Password Generator</Heading>
+            <div>
+               <Heading type='secondary'>Password Generator</Heading>
+               <Spacer01 />
+            </div>
             <Box>
-               <GeneratedPassword password={password} snackBar={snackBar} handleSnackBar={handleSnackBar}/>
+               <GeneratedPassword
+                  password={password}
+                  snackBar={snackBar}
+                  handleSnackBar={handleSnackBar}
+               />
             </Box>
             <Box>
-               <InputWithLabel
-                  label={<Label text={'Character Length'} value={characterCount} />}
-                  input={
-                     <SliderInput value={characterCount} set={setCharacterCount} min={6} max={20} />
-                  }
-               />
+               <div>
+                  <InputWithLabel
+                     label={<Label text={'Character Length'} value={characterCount} />}
+                     input={
+                        <SliderInput
+                           value={characterCount}
+                           set={setCharacterCount}
+                           min={6}
+                           max={20}
+                        />
+                     }
+                  />
+                  <Spacer01 />
+                  <Spacer01 />
+               </div>
                <CheckBoxGroup>
                   <CheckBox
                      label='Include Uppercase Letters'
@@ -69,12 +84,16 @@ export const PasswordGenerator = () => {
                   <CheckBox label='Include Symbols' checked={symbols} setChecked={setSymbols} />
                </CheckBoxGroup>
                <StrengthIndicator score={score} />
-               <Button
-                  label='GENERATE'
-                  icon={Arrow}
-                  iconHover={ArrowHover}
-                  onClick={handleGenerateClick}
-               />
+               <div>
+                  <Button
+                     label='GENERATE'
+                     icon={Arrow}
+                     iconHover={ArrowHover}
+                     onClick={handleGenerateClick}
+                  />
+                  <Spacer01 />
+                  <Spacer01 />
+               </div>
             </Box>
          </Layout>
       </div>
